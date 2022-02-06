@@ -2,8 +2,9 @@ const { Router } = require('express')
 
 const router = Router()
 
-router.get('/tasks', (req, res) => {
-    res.send('retrieving a list of tasks')
+
+router.get('/tasks', async (req, res) => {
+    res.send('retreaving a list of tasks')
 })
 
 router.get('/tasks/10', (req, res) => {
